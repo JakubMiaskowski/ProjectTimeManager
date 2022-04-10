@@ -8,7 +8,7 @@
         mc:Ignorable="d"
         Title="Project Time Manager" Height="400" Width="500" ResizeMode="NoResize">
     <Grid>
-        
+
         <Grid.RowDefinitions>
             <RowDefinition Height="5"/>
             <RowDefinition Height="30"/>
@@ -22,9 +22,10 @@
 
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="10"/>
-            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="157*"/>
             <ColumnDefinition Width="10"/>
-            <ColumnDefinition Width="4*"/>
+            <ColumnDefinition Width="175*"/>
+            <ColumnDefinition Width="138*"/>
             <ColumnDefinition Width="10"/>
         </Grid.ColumnDefinitions>
 
@@ -46,13 +47,13 @@
                    Text="9999999"
                    FontSize="19" FontFamily="Tahoma" FontStyle="Italic" FontWeight="Bold"/>
 
-        <Grid Grid.Row="1" Grid.Column="3">
-            
+        <Grid Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="2">
+
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="4*"/>
                 <ColumnDefinition Width="1*"/>
             </Grid.ColumnDefinitions>
-            
+
             <TextBlock Grid.Column="0"
                    HorizontalAlignment="Left"
                    VerticalAlignment="Center"
@@ -66,14 +67,14 @@
                     Background="DarkOrange" BorderThickness="1"
                     Content="+"/>
         </Grid>
-        
-        <views:ProjectDetailsView Grid.Row="2"  Grid.RowSpan="2" Grid.Column="1"
+
+        <views:ProjectDetailsView Grid.Row="2"  Grid.RowSpan="3" Grid.Column="1"
                                   VerticalContentAlignment="Stretch"
-                                  HorizontalContentAlignment="Stretch"/>
+                                  HorizontalContentAlignment="Stretch" Grid.ColumnSpan="2" Margin="0,0,10,10"/>
 
         <views:ProjectListView Grid.Row="2"  Grid.RowSpan="5" Grid.Column="3"
                                VerticalContentAlignment="Stretch"
-                               HorizontalContentAlignment="Stretch"/>
+                               HorizontalContentAlignment="Stretch" Grid.ColumnSpan="2"/>
 
     </Grid>
 </Window>

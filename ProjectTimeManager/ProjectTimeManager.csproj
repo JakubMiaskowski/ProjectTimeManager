@@ -81,6 +81,8 @@
     <Compile Include="Ninject\NinjectBindings.cs" />
     <Compile Include="RelayCommand.cs" />
     <Compile Include="ViewModels\BaseViewModel.cs" />
+    <Compile Include="ViewModels\ProjectDetailsViewModel.cs" />
+    <Compile Include="ViewModels\ProjectListViewModel.cs" />
     <Compile Include="ViewModels\ProjectTimeManagerViewModel.cs" />
     <Compile Include="Views\ProjectDetailsView.xaml.cs">
       <DependentUpon>ProjectDetailsView.xaml</DependentUpon>

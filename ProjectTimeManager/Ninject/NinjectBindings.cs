@@ -22,6 +22,8 @@ namespace ProjectTimeManager.Ninject
             Bind<IProjectRepository>().To<ProjectRepositoryMock>();
             Bind<IProjectService>().To<ProjectService>();
             Bind<ProjectTimeManagerViewModel>().ToSelf();
+            Bind<ProjectListViewModel>().ToSelf();
+            Bind<ProjectDetailsViewModel>().ToSelf();
         }
     }
 }
